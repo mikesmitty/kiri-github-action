@@ -54,6 +54,9 @@ RUN useradd -rm -d "/home/github" -s "$(which bash)" -G sudo -u 1001 -U github
 # Run sudo without password
 RUN echo "github ALL=(ALL) NOPASSWD:ALL" | tee sudo -a "/etc/sudoers"
 
+# Allow pip to install packages globally
+RUN rm -fv /usr/lib/python3*/EXTERNALLY-MANAGED
+
 # Change current user
 USER github
 WORKDIR "/home/github"
