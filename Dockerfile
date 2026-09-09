@@ -1,6 +1,6 @@
 
 # Latest stable version of Ubuntu, of course
-FROM ubuntu:24.04
+FROM ubuntu:26.04@sha256:513c074113a871b51a8d16ab445c88779d6452d937a164fb5cc479f32668a41d
 
 LABEL org.opencontainers.image.authors "Leandro Heck <leoheck@gmail.com>, Jacob McSwain <kiri-github-action@mcswain.dev>"
 LABEL org.opencontainers.image.description "Kicad 7 and KiRI"
